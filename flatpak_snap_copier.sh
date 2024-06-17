@@ -12,13 +12,17 @@ destination_dir="$HOME/.local/share/applications"
 
 # Find files in source directory and iterate over them
 find "$source_flatpak_dir" -iname "*.desktop" | while read -r file; do
-    # do not copy if file exists
-	cp -n "$file" "$destination_dir"
-	zenity --notification --text="Copied flatpak file: $file"
+	# do not copy if file exists
+	if [ ! -f /path/to/file ]; then
+		cp -n "$file" "$destination_dir"
+		zenity --notification --text="Copied flatpak file: $file"
+	fi
 done
 find "$source_snap_dir" -iname "*.desktop" | while read -r file; do
-    # do not copy if file exists
-	cp -n "$file" "$destination_dir"
-	zenity --notification --text="Copied snap file: $file"
+	# do not copy if file exists
+	if [ ! -f /path/to/file ]; then
+		cp -n "$file" "$destination_dir"
+		zenity --notification --text="Copied snap file: $file"
+	fi
 done
 jwm -reload
