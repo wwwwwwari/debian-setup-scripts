@@ -25,6 +25,7 @@ This part includes initial wired network configuration just so an additional pac
 `sudo apt autoremove`
 
 Connect LAN cable to your computer
+
 `sudo nano /etc/apt/sources.list` to use mirror.applebred.net. Ensure nonfree is included
 
 `sudo ip a` to get the wired and wireless interfaces - will assume eth0 and wlan0 below
@@ -149,9 +150,11 @@ Add the following to the file:
 `sudo shutdown -r now` to apply the changes (may still need a password one last time)
 
 ## Git Configuration and Install
+
 `ssh-keygen -t ed25519 -C "warireku@gmail.com"`
 
 Add the public key on GitHub accordingly.
+
 `mkdir ~/git`
 
 `cd ~/git`
@@ -161,6 +164,7 @@ Add the public key on GitHub accordingly.
 `git clone git@github.com:wwwwwwari/debian-setup-scripts.git`
 
 ## Hardware Configuration
+
 ### Disabling Laptop Keyboard/Touchpad & Enabling NumLock at Startup
 
 `sudo apt install numlockx`
@@ -174,6 +178,7 @@ Add the public key on GitHub accordingly.
 `sudo chmod +x /opt/custom_scripts/xinput_commands.sh`
 
 `sudo nano /etc/lightdm/lightdm.conf`
+
 Add the following under the already-uncommented `[Seat:*]`:
 
 ```
@@ -184,9 +189,11 @@ display-setup-script=/opt/custom_scripts/xinput_commands.sh
 `sudo shutdown -r now` to apply the changes
 
 ### Remove Loud System Beeps
+
 `sudo rmmod pcspkr`
 
 `sudo nano /etc/modprobe.d/blacklist.conf` 
+
 Add the following line at the end of the file:
 
 `blacklist pcspkr`
@@ -198,6 +205,7 @@ The changes should apply without a restart
 1. **Laptop keyboard and touchpad aren't disabled:** check if chmod +x is done to the script and that the display-setup-script is under the already uncommented `[Seat:*]` not the commented one above it
 
 ## Desktop Configuration
+
 ### Package Install & Removal
 
 `sudo apt install lightdm jwm pcmanfm lxterminal geany papirus-icon-theme bibata-cursor-theme libglib2.0-dev adwaita-qt adwaita-qt6 awf-gtk4 wireshark git blackbird-gtk-theme lxappearance` 
@@ -209,6 +217,7 @@ When prompted, select lightdm instead of sddm.
 `sudo apt autoremove`
 
 ## Default Apps Configuration 
+
 The list of configurable alternatives are in /etc/alternatives
 
 `sudo update-alternatives --config x-terminal-emulator` and select the LXTerminal
@@ -279,7 +288,9 @@ Check if the theme is applied in programs like Wireshark and awf-gtk4
 awf-gtk4 maybe removed afterwards if no longer used
 
 ## JWM Configuration
+
 ### Package Install
+
 Download JWM Kit from https://sourceforge.net/projects/jwmkit/files/Packages/Debian/
 
 `sudo dpkg -i jwmkit.deb`
@@ -349,6 +360,7 @@ In the Items tab:
 ### JWMKit Keys Setup
 
 `mkdir ~/Pictures/screenshots`
+
 In JWMKit Keys, add the following:
 
 1.  Print to `exec:scrot -e 'xclip -selection clipboard -t image/png -i $f' ~/Pictures/screenshots/%Y-%m-%d-%H:%M:%S.png`
@@ -364,6 +376,7 @@ In JWMKit Keys, add the following:
 6. Mod 4 + E to `exec:pcmanfm`
 
 ## Locale Setup
+
 ### Package Install
 
 `sudo apt install systemd-timesyncd fcitx5-mozc`
@@ -387,6 +400,7 @@ FallbackNTP=th.pool.ntp.org
 Changes should take place immediately
 
 ### Keyboard Configuration
+
 In JWMKit Settings, select Input Method (keyboard icon) and select fcitx5.
 
 In JWMKit Startups, add `/usr/bin/fcitx5`  as a startup program
@@ -410,6 +424,7 @@ In the Global Options tab, set
 In JWMKit Settings, select Mozc Setup, click Edit User Dictionary in the Dictionary tab and add custom dictionary entries as needed.
 
 ## Application Setup
+
 ### Package Install & Removal
 
 `sudo apt install flatpak snapd notification-daemon galculator evince feh mpv scrot xclip font-manager pavucontrol gpick diffuse gprename simplescreenrecorder transmission-gtk audacious chromium`
@@ -428,6 +443,8 @@ In JWMKit Settings, select Mozc Setup, click Edit User Dictionary in the Diction
 
 Download volume icon from https://github.com/Maato/volumeicon
 
+Download Discord from https://discord.com/download
+
 ### Enabling Volume Icon
 
 Extract the Volume Icon Zip
@@ -442,7 +459,7 @@ Extract the Volume Icon Zip
 
 In JWMKit Startup, add `/usr/local/bin/volumeicon` as a startup
 
-### Blocking Annoying Spellchecker Packages
+### Blocking Annoying Spellchecker and i10n Packages
 
 `sudo mv ~/git/debian-setup-scripts/apt/preferences.d/11-block-dictionaries /etc/apt/preferences.d/` 
 
