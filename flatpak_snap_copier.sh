@@ -17,7 +17,7 @@ find "$source_flatpak_dir" -iname "*.desktop" | while read -r file; do
 	new_file="$destination_dir/$base_name"
 	if [ ! -f "$new_file" ]; then
 		cp -n "$file" "$destination_dir"
-		chmod +x "$new_file"
+		chmod -x "$new_file"
 		zenity --notification --text="Copied flatpak file: $file"
 	fi
 done
@@ -28,7 +28,7 @@ find "$source_snap_dir" -iname "*.desktop" | while read -r file; do
 	new_file="$destination_dir/$base_name"
 	if [ ! -f "$new_file" ]; then
 		cp -n "$file" "$destination_dir"
-		chmod +x "$new_file"
+		chmod -x "$new_file"
 		zenity --notification --text="Copied snap file: $file"
 	fi
 done
