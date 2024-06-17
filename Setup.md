@@ -2,6 +2,9 @@
 
 Download LXQt ISO from https://cdimage.debian.org/debian-cd/current-live/amd64/bt-hybrid/ 
 
+Note: while the final setup will include many of LXDE components, it is still more recommended to grab LXQt instead. d
+Due to LXDE's semi-abandoned nature, it might not be around in the next setup, meaning parts of this will be completely outdated, and may potentially messing up the overall setup process even if it's still around. For more information, see lxpanel in sid/testing and its [CRITICAL AND](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1052376) [ALWAYS VISIBLE](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1052050) [0.10.1-4 BUG](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1052437) that never gets fixed since September 2023.
+
 Download Unetbootin from https://unetbootin.github.io/ and extract the live ISO to a USB
 
 Go into BIOS (google how) and make the USB boot first
