@@ -1,7 +1,7 @@
 #!/bin/bash
 # quick and dirty script that copies desktop files in snap and flatpak directories to current user's local applications folder
 # needed for a Debian/JWM setup as JWMKit's Easy Menu doesn't look for files in these locations
-# this requires zenity
+# this requires zenity and jwm
 # to use, schedule as cron jobs or as a startup
 # Source directory where files are located
 source_flatpak_dir="/var/lib/flatpak/exports/share/applications"
@@ -21,3 +21,4 @@ find "$source_snap_dir" -iname "*.desktop" | while read -r file; do
 	cp -n "$file" "$destination_dir"
 	zenity --notification --text="Copied snap file: $file"
 done
+jwm -reload
