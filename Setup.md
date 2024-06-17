@@ -2,7 +2,7 @@
 
 Download LXQt ISO from https://cdimage.debian.org/debian-cd/current-live/amd64/bt-hybrid/ 
 
-Note: while the final setup will include a few LXDE independent applications (pcmanfm, lxtask and lxappearance), it is still more recommended to grab LXQt instead.
+Note: while the final setup will include a few LXDE independent applications (pcmanfm, lxtask, lxterminal and lxappearance), it is still more recommended to grab LXQt instead.
 Due to LXDE's semi-abandoned nature, it might not be around in the next setup, meaning parts of this will be completely outdated, and may potentially messing up the overall setup process even if it's still around. For more information, see lxpanel in sid/testing and its [CRITICAL AND](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1052376) [ALWAYS VISIBLE](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1052050) [0.10.1-4 BUG](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1052437) that never gets fixed since September 2023.
 
 Download Unetbootin from https://unetbootin.github.io/ and extract the live ISO to a USB
@@ -199,7 +199,7 @@ The changes should apply without a restart
 ## Desktop Configuration
 ### Package Install & Removal
 
-`sudo apt install lightdm jwm pcmanfm lxterminal geany papirus-icon-theme bibata-cursor-theme libglib2.0-dev adwaita-qt adwaita-qt6 awf-gtk4 wireshark git blackbird-gtk-theme` 
+`sudo apt install lightdm jwm pcmanfm lxterminal geany papirus-icon-theme bibata-cursor-theme libglib2.0-dev adwaita-qt adwaita-qt6 awf-gtk4 wireshark git blackbird-gtk-theme lxappearance` 
 
 When prompted, select lightdm instead of sddm.
 
@@ -233,17 +233,11 @@ Inherits=Bibata-Modern-Classic
 
 ### GTK2 Theme Setup
 
-`nano ~/.gtkrc-2.0`
+`lxappearance`
 
-Change the value of the following lines:
+Change the theme to Blackbird, icon to Papirus-Dark and cursor to Bibata.
 
-```
-gtk-theme-name="Blackbird"
-gtk-icon-theme-name="Papirus-Dark"
-gtk-cursor-theme-name="Bibata-Modern-Classic"
-```
-
-Check if the theme is applied in programs like pcmanfm
+Check if the theme is applied in programs like pcmanfm and lxtask
 
 ### GTK3 Theme Setup
 
