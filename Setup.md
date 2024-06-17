@@ -17,7 +17,7 @@ This part include initial network configuration just so additional packages can 
 
 `sudo apt-mark manual xarchiver xinit` to ensure these don't get removed by the following two commands
 
-`sudo apt remove lxqt*` to ensure no network manager is interfering with network configuration
+`sudo apt remove lxqt*` to revive remove LXQt and to ensure no network manager is interfering with network configuration
 `sudo apt autoremove`
 
 Connect LAN cable to your computer
@@ -95,7 +95,7 @@ Comment out `auto eth0` and un-comment `auto wlan0`
 
 Pull out the LAN cable
 
-`sudo ip route` if the 'default' line still contains `eth0` do the two following commands
+`sudo ip route` and if the 'default' line still contains `eth0` do the two following commands
 
 `sudo ip route del default`
 
