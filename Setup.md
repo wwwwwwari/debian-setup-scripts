@@ -16,7 +16,7 @@ Aside from wifi issue, if there's no other problem, proceed with installation
 ## Network Configuration
 ### Wired Connection Configuration
 
-This part include initial network configuration just so additional packages can be installed from the apt repository
+This part includes initial wired network configuration just so an additional package, rfkill, needed for wi-fi configuration can be installed from the apt repository.
 
 `sudo apt-mark manual xarchiver xinit` to ensure these don't get removed by the following two commands
 
