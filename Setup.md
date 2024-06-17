@@ -124,7 +124,7 @@ Pray to God the DHCP wi-fi connection is up. 🙏 🙏 🙏 🙏 🙏
 
 `sudo shutdown -r now` to restart (this should boot into CLI)
 
-Pray to God the connection is still working fine
+Pray to God the connection is still working fine 🙏 🙏 🙏 🙏 🙏 
 
 ### Common Issues
 
@@ -151,7 +151,7 @@ Add the following to the file:
 
 ## Git Configuration and Install
 
-`ssh-keygen -t ed25519 -C "warireku@gmail.com"`
+`ssh-keygen -t ed25519 -C "<email address>"`
 
 Add the public key on GitHub accordingly.
 
