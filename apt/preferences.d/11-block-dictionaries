@@ -1,0 +1,19 @@
+Package: myspell*
+Pin: release *
+Pin-Priority: -1
+
+Package: aspell*
+Pin: release *
+Pin-Priority: -1
+
+Package: firefox-esr-l10n*
+Pin: release *
+Pin-Priority: -1
+
+Package: libreoffice-l10n-*
+Pin: release *
+Pin-Priority: -1
+
+Package: hunspell-ar hunspell-be hunspell-bg hunspell-bs hunspell-ca hunspell-cs hunspell-da hunspell-de-at hunspell-de-ch hunspell-de-de hunspell-el hunspell-en-gb hunspell-eu hunspell-fr hunspell-fr-classical hunspell-gl hunspell-gu hunspell-hi hunspell-hr hunspell-hu hunspell-id hunspell-is hunspell-it hunspell-kk hunspell-kmr hunspell-ko hunspell-lt hunspell-lv hunspell-ml hunspell-ne hunspell-nl hunspell-pl hunspell-pt-br hunspell-pt-pt hunspell-ro hunspell-ru hunspell-si hunspell-sl hunspell-sr hunspell-sv hunspell-te hunspell-th hunspell-vi 
+Pin: release *
+Pin-Priority: -1
