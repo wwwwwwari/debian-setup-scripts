@@ -58,7 +58,7 @@ Pray to God the static wired connection is up. 🙏
 
 Comment out the lines from `iface eth0 inet static` to the first `dns-nameservers`  
 
-Add `iface eth0 inet dhcp` to before the commented out lines
+Add `iface eth0 inet dhcp` before the commented out lines
 
 `sudo ifdown eth0`
 
@@ -114,7 +114,7 @@ Pray to God the static wi-fi connection is up 🙏 🙏 🙏
 
 Comment out the lines from `iface wlan0 inet static` to the second `dns-nameservers`  
 
-Add `iface wlan0 inet dhcp` to before the commented out lines
+Add `iface wlan0 inet dhcp` before the commented out lines
 
 `sudo ifdown wlan0`
 
