@@ -364,26 +364,33 @@ sudo cp /usr/share/icons/Papirus-Dark/symbolic/actions/window-close-symbolic.svg
 
 ### JWMKit Menu Setup
 
+`sudo cp ~/git/debian-setup-scripts/confirm-*.sh /opt/custom_scripts`
+
+`sudo chmod +x /opt/custom_scripts/confirm-*.sh`
+
 Select Easy Menu Settings, uncheck No Duplicates and set Terminal to LXTerminal
 
 Click the Properties tab and set the Height to 36
 
 Click the Root Menu in the left panel:
+
 1. Set the icon of Exit to `application-exit-symbolic`
 
 2. Add a new Program item with the name "Run...", icon "system-run-symbolic", command "gmrun"
 
 3. Add a new Separator below Run
 
-Click the Exit in the left panel, and set the icon of Refresh to `system-reboot-symbolic`, Logout to `system-logout-symbolic`
+Click the Exit in the left panel, and set the icon of Refresh to `system-reboot-symbolic`, and remove the Logout item
 
 Add Program items for shutdown with the following commands and icons: 
 
-1. Shutdown: `sudo shutdown -h now` and `system-shutdown-symbolic`
+1. Shutdown: `/opt/custom_scripts/confirm-shutdown.sh` and `system-shutdown-symbolic`
 
-2. Restart: `sudo shutdown -r now` and `system-restart-symbolic`
+2. Restart: `/opt/custom_scripts/confirm-restart.sh` and `system-restart-symbolic`
 
-3. Lock: `dm-tool lock` and  `system-lock-screen-symbolic`
+3. Log Out: `/opt/custom_scripts/confirm-logout.sh` and `system-log-out-symbolic`
+
+4. Lock: `dm-tool lock` and  `system-lock-screen-symbolic`
 
 ### JWMKit Freedesktops Setup
 
