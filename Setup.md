@@ -477,7 +477,7 @@ In JWMKit Settings, select Mozc Setup, click Edit User Dictionary in the Diction
 
 ### Package Install & Removal
 
-`sudo apt install flatpak snapd notification-daemon galculator evince feh mpv scrot xclip font-manager pavucontrol gpick diffuse gprename simplescreenrecorder transmission-gtk audacious chromium blueman libqt5xml5 libqt5concurrent5 wget gnome-mines sl fortune cowsay lolcat`
+`sudo apt install flatpak snapd notification-daemon galculator evince feh mpv scrot xclip font-manager pavucontrol gpick diffuse gprename simplescreenrecorder transmission-gtk audacious chromium blueman libqt5xml5 libqt5concurrent5 wget gnome-mines sl fortune cowsay lolcat onboard`
 
 `sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo`
 
@@ -538,6 +538,12 @@ Small changes may still be needed for the copied desktop files. For example's Pi
 In JWMKit Startups, add `/usr/bin/blueman-applet` as a startup
 
 In Bluetooth Manager, set ~/Downloads/bluetooth as the incoming directory
+
+### Enabling Onboard
+
+`sudo nano /etc/lightdm/lightdm-gtk-greeter.conf`
+
+Add `keyboard=onboard` under the already uncommented `[greeter]`
 
 ### Application-Specific Theme Setup
 
