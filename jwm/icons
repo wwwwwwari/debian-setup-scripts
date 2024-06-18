@@ -1,5 +1,36 @@
 <?xml version="1.0"?>
 <JWM>
+   <IconPath>/usr/share/icons/Papirus-Dark/8x8/emblems</IconPath>
+   <IconPath>/usr/share/icons/Papirus-Dark/16x16/actions</IconPath>
+   <IconPath>/usr/share/icons/Papirus-Dark/16x16/apps</IconPath>
+   <IconPath>/usr/share/icons/Papirus-Dark/16x16/categories</IconPath>
+   <IconPath>/usr/share/icons/Papirus-Dark/16x16/devices</IconPath>
+   <IconPath>/usr/share/icons/Papirus-Dark/16x16/emblems</IconPath>
+   <IconPath>/usr/share/icons/Papirus-Dark/16x16/emotes</IconPath>
+   <IconPath>/usr/share/icons/Papirus-Dark/16x16/mimetypes</IconPath>
+   <IconPath>/usr/share/icons/Papirus-Dark/16x16/panel</IconPath>
+   <IconPath>/usr/share/icons/Papirus-Dark/16x16/places</IconPath>
+   <IconPath>/usr/share/icons/Papirus-Dark/16x16/status</IconPath>
+   <IconPath>/usr/share/icons/Papirus-Dark/24x24/actions</IconPath>
+   <IconPath>/usr/share/icons/Papirus-Dark/24x24/animations</IconPath>
+   <IconPath>/usr/share/icons/Papirus-Dark/24x24/apps</IconPath>
+   <IconPath>/usr/share/icons/Papirus-Dark/24x24/categories</IconPath>
+   <IconPath>/usr/share/icons/Papirus-Dark/24x24/devices</IconPath>
+   <IconPath>/usr/share/icons/Papirus-Dark/24x24/emblems</IconPath>
+   <IconPath>/usr/share/icons/Papirus-Dark/24x24/emotes</IconPath>
+   <IconPath>/usr/share/icons/Papirus-Dark/24x24/mimetypes</IconPath>
+   <IconPath>/usr/share/icons/Papirus-Dark/24x24/panel</IconPath>
+   <IconPath>/usr/share/icons/Papirus-Dark/24x24/places</IconPath>
+   <IconPath>/usr/share/icons/Papirus-Dark/24x24/status</IconPath>
+   <IconPath>/usr/share/icons/Papirus-Dark/32x32/actions</IconPath>
+   <IconPath>/usr/share/icons/Papirus-Dark/32x32/apps</IconPath>
+   <IconPath>/usr/share/icons/Papirus-Dark/32x32/categories</IconPath>
+   <IconPath>/usr/share/icons/Papirus-Dark/32x32/devices</IconPath>
+   <IconPath>/usr/share/icons/Papirus-Dark/32x32/emblems</IconPath>
+   <IconPath>/usr/share/icons/Papirus-Dark/32x32/emotes</IconPath>
+   <IconPath>/usr/share/icons/Papirus-Dark/32x32/mimetypes</IconPath>
+   <IconPath>/usr/share/icons/Papirus-Dark/32x32/places</IconPath>
+   <IconPath>/usr/share/icons/Papirus-Dark/32x32/status</IconPath>
    <IconPath>/usr/share/icons/Papirus-Dark/128x128/apps</IconPath>
    <IconPath>/usr/share/icons/Papirus-Dark/128x128/devices</IconPath>
    <IconPath>/usr/share/icons/Papirus-Dark/128x128/mimetypes</IconPath>
@@ -26,26 +57,6 @@
    <IconPath>/usr/share/pixmaps/jwmkit/</IconPath>
    <IconPath>/usr/share/pixmaps/</IconPath>
    <IconPath>/usr/share/icons/Papirus-Dark/42x42/apps</IconPath>
-   <IconPath>/usr/share/icons/Papirus-Dark/32x32/actions</IconPath>
-   <IconPath>/usr/share/icons/Papirus-Dark/32x32/apps</IconPath>
-   <IconPath>/usr/share/icons/Papirus-Dark/32x32/categories</IconPath>
-   <IconPath>/usr/share/icons/Papirus-Dark/32x32/devices</IconPath>
-   <IconPath>/usr/share/icons/Papirus-Dark/32x32/emblems</IconPath>
-   <IconPath>/usr/share/icons/Papirus-Dark/32x32/emotes</IconPath>
-   <IconPath>/usr/share/icons/Papirus-Dark/32x32/mimetypes</IconPath>
-   <IconPath>/usr/share/icons/Papirus-Dark/32x32/places</IconPath>
-   <IconPath>/usr/share/icons/Papirus-Dark/32x32/status</IconPath>
-   <IconPath>/usr/share/icons/Papirus-Dark/24x24/actions</IconPath>
-   <IconPath>/usr/share/icons/Papirus-Dark/24x24/animations</IconPath>
-   <IconPath>/usr/share/icons/Papirus-Dark/24x24/apps</IconPath>
-   <IconPath>/usr/share/icons/Papirus-Dark/24x24/categories</IconPath>
-   <IconPath>/usr/share/icons/Papirus-Dark/24x24/devices</IconPath>
-   <IconPath>/usr/share/icons/Papirus-Dark/24x24/emblems</IconPath>
-   <IconPath>/usr/share/icons/Papirus-Dark/24x24/emotes</IconPath>
-   <IconPath>/usr/share/icons/Papirus-Dark/24x24/mimetypes</IconPath>
-   <IconPath>/usr/share/icons/Papirus-Dark/24x24/panel</IconPath>
-   <IconPath>/usr/share/icons/Papirus-Dark/24x24/places</IconPath>
-   <IconPath>/usr/share/icons/Papirus-Dark/24x24/status</IconPath>
    <IconPath>/usr/share/icons/Papirus-Dark/22x22/actions</IconPath>
    <IconPath>/usr/share/icons/Papirus-Dark/22x22/animations</IconPath>
    <IconPath>/usr/share/icons/Papirus-Dark/22x22/apps</IconPath>
@@ -58,17 +69,6 @@
    <IconPath>/usr/share/icons/Papirus-Dark/22x22/places</IconPath>
    <IconPath>/usr/share/icons/Papirus-Dark/22x22/status</IconPath>
    <IconPath>/usr/share/icons/Papirus-Dark/18x18/actions</IconPath>
-   <IconPath>/usr/share/icons/Papirus-Dark/16x16/actions</IconPath>
-   <IconPath>/usr/share/icons/Papirus-Dark/16x16/apps</IconPath>
-   <IconPath>/usr/share/icons/Papirus-Dark/16x16/categories</IconPath>
-   <IconPath>/usr/share/icons/Papirus-Dark/16x16/devices</IconPath>
-   <IconPath>/usr/share/icons/Papirus-Dark/16x16/emblems</IconPath>
-   <IconPath>/usr/share/icons/Papirus-Dark/16x16/emotes</IconPath>
-   <IconPath>/usr/share/icons/Papirus-Dark/16x16/mimetypes</IconPath>
-   <IconPath>/usr/share/icons/Papirus-Dark/16x16/panel</IconPath>
-   <IconPath>/usr/share/icons/Papirus-Dark/16x16/places</IconPath>
-   <IconPath>/usr/share/icons/Papirus-Dark/16x16/status</IconPath>
-   <IconPath>/usr/share/icons/Papirus-Dark/8x8/emblems</IconPath>
    <IconPath>/usr/share/icons/Papirus-Dark/symbolic/actions</IconPath>
    <IconPath>/usr/share/icons/Papirus-Dark/symbolic/apps</IconPath>
    <IconPath>/usr/share/icons/Papirus-Dark/symbolic/categories</IconPath>

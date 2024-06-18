@@ -1,0 +1,9 @@
+<JWM>
+     <StartupCommand>/usr/share/discord/Discord</StartupCommand>
+     <StartupCommand>/usr/bin/fcitx5</StartupCommand>
+     <StartupCommand>/usr/lib/notification-daemon/notification-daemon</StartupCommand>
+     <StartupCommand>/opt/custom_scripts/flatpak_snap_copier.sh</StartupCommand>
+     <RestartCommand>/opt/custom_scripts/flatpak_snap_copier.sh</RestartCommand>
+     <StartupCommand>/usr/local/bin/volumeicon</StartupCommand>
+     <StartupCommand>/usr/bin/blueman-applet</StartupCommand>
+</JWM>

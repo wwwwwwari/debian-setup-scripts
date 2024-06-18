@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<JWM>   
+   <RootMenu label="Applications" onroot="1" height="40" labeled="true">      
+      <Separator />      
+      <Include>exec:jwmkit_easymenu -t:"lxterminal" -hc:"Settings":"JWM Kit"</Include>      
+      <Separator />      
+      <Program label="Run..." icon="system-run-symbolic">gmrun</Program>                                          <Separator />                                          <Menu label="Exit" icon="application-exit-symbolic">                                                                                 <Restart label="Refresh" icon="system-reboot-symbolic" tooltip="Restart JWM" />         
+         <Program label="Lock" icon="system-lock-screen-symbolic">dm-tool lock</Program>                                                                                                   <Program label="Logout" icon="system-log-out-symbolic" tooltip="Logout, Reboot, or Shutdown">/opt/custom_scripts/confirm-logout.sh</Program>         
+         <Program label="Restart" icon="system-restart-symbolic">/opt/custom_scripts/confirm-restart.sh</Program>                                                                                                   <Program label="Shutdown" icon="system-shutdown-symbolic">/opt/custom_scripts/confirm-shutdown.sh</Program>                                                                                 </Menu>      
+   </RootMenu>   
+</JWM>

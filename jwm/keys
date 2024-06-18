@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<JWM>
+   <Key key="Up">up</Key>
+   <Key key="Down">down</Key>
+   <Key key="Right">right</Key>
+   <Key key="Left">left</Key>
+   <Key key="Escape">escape</Key>
+   <Key key="Return">select</Key>
+   <Key key="Tab" mask="A">next</Key>
+   <Key key="F4" mask="A">close</Key>
+   <Key key="Right" mask="A">rdesktop</Key>
+   <Key key="Left" mask="A">ldesktop</Key>
+   <Key key="Up" mask="A">udesktop</Key>
+   <Key key="Down" mask="A">ddesktop</Key>
+   <Key key="#" mask="A">desktop#</Key>
+   <Key key="Print" mask="A">exec:scrot -e 'xclip -selection clipboard -t image/png -i $f' ~/Pictures/screenshots/%Y-%m-%d-%H:%M:%S.png -u</Key>
+   <Key key="Print">exec:scrot -e 'xclip -selection clipboard -t image/png -i $f' ~/Pictures/screenshots/%Y-%m-%d-%H:%M:%S.png</Key>
+   <Key key="r" mask="4">exec:gmrun</Key>
+   <Key key="Delete" mask="AC">exec:lxtask</Key>
+   <Key key="Escape" mask="CS">exec:lxtask</Key>
+   <Key key="Tab" mask="AS">prev</Key>
+   <Key key="e" mask="4">exec:pcmanfm</Key>
+</JWM>
