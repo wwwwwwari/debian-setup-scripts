@@ -280,7 +280,6 @@ Check if the theme is applied in programs like Geany or Mousepad
 ```
 export GTK_THEME=Adwaita-dark
 export QT_STYLE_OVERRIDE=Adwaita-dark
-export NO_AT_BRIDGE=1
 ```
 
 Check if the theme is applied in programs like Wireshark and awf-gtk4
@@ -310,7 +309,58 @@ Copy the cloned Jwaita theme file and buttons to `~/.config/jwm/themes`
 Run the JWMKit Settings, go to Appearance and select the Jwaita theme and button (for the latter, needs to flip the toggle at the bottom of the button tab)
 
 ### JWM Icon Setup
+
 `cp ~/git/debian-setup-scripts/jwm/icons ~/.config/jwm/icons`
+
+`sudo cp -r /usr/share/pixmaps/jwmkit /usr/share/pixmaps/jwmkit-backup`
+
+```
+sudo cp /usr/share/icons/Papirus-Dark/64x64/apps/preferences-desktop-display-color.svg /usr/share/pixmaps/jwmkit/icons.svg;
+sudo cp /usr/share/icons/Papirus-Dark/64x64/apps/preferences-desktop-keyboard-shortcuts.svg /usr/share/pixmaps/jwmkit/keys.svg;
+sudo cp /usr/share/icons/Papirus-Dark/64x64/apps/preferences-desktop-wallpaper.svg /usr/share/pixmaps/jwmkit/wallpaper.svg;
+sudo cp /usr/share/icons/Papirus-Dark/64x64/apps/preferences.svg /usr/share/pixmaps/jwmkit/config.svg;
+sudo cp /usr/share/icons/Papirus-Dark/64x64/apps/preferences-composer.svg /usr/share/pixmaps/jwmkit/menugray.svg;
+sudo cp /usr/share/icons/Papirus-Dark/64x64/apps/application-default-icon.svg /usr/share/pixmaps/jwmkit/executegray.svg;
+sudo cp /usr/share/icons/Papirus-Dark/64x64/apps/preferences-system-services.svg /usr/share/pixmaps/jwmkit/restoregray.svg;
+sudo cp /usr/share/icons/Papirus-Dark/64x64/apps/preferences-system-time.svg /usr/share/pixmaps/jwmkit/clockgray.svg;
+sudo cp /usr/share/icons/Papirus-Dark/64x64/apps/preferences-system-time.svg /usr/share/pixmaps/jwmkit/clock.svg;
+sudo cp /usr/share/icons/Papirus-Dark/64x64/apps/preferences-system-windows-move.svg /usr/share/pixmaps/jwmkit/groups.svg;
+sudo cp /usr/share/icons/Papirus-Dark/symbolic/status/battery-level-100-charged-symbolic.svg /usr/share/pixmaps/jwmkit/bat.svg;
+sudo cp /usr/share/icons/Papirus-Dark/symbolic/apps/spacer-symbolic.svg /usr/share/pixmaps/jwmkit/spacer.svg;
+sudo cp /usr/share/icons/Papirus-Dark/64x64/apps/preferences-system-windows.svg /usr/share/pixmaps/jwmkit/tasklist.svg;
+sudo cp /usr/share/icons/Papirus-Dark/64x64/apps/preferences-system-notifications.svg /usr/share/pixmaps/jwmkit/dock.svg;
+sudo cp /usr/share/icons/Papirus-Dark/64x64/apps/preferences-desktop-workspaces.svg /usr/share/pixmaps/jwmkit/pager.svg;
+sudo cp /usr/share/icons/Papirus-Dark/symbolic/actions/system-run-symbolic.svg /usr/share/pixmaps/jwmkit/swallow.svg;
+sudo cp /usr/share/icons/Papirus-Dark/symbolic/status/audio-volume-high-symbolic.svg /usr/share/pixmaps/jwmkit/volume.svg;
+sudo cp /usr/share/icons/Papirus-Dark/64x64/apps/preferences-system-login.svg /usr/share/pixmaps/jwmkit/launch.svg;
+sudo cp /usr/share/icons/Papirus-Dark/64x64/apps/preferences-system-login.svg /usr/share/pixmaps/jwmkit/traybutton.svg;
+sudo cp /usr/share/icons/Papirus-Dark/64x64/apps/system-file-manager.svg /usr/share/pixmaps/jwmkit/file-manager.svg;
+sudo cp /usr/share/icons/Papirus-Dark/64x64/places/folder-root.svg /usr/share/pixmaps/jwmkit/folder_root_blue.svg;
+sudo cp /usr/share/icons/Papirus-Dark/symbolic/actions/link-symbolic.svg /usr/share/pixmaps/jwmkit/link.svg;
+sudo cp /usr/share/icons/Papirus-Dark/64x64/places/folder.svg /usr/share/pixmaps/jwmkit/folder_blue.svg;
+sudo cp /usr/share/icons/Papirus-Dark/64x64/places/folder-deeporange.svg /usr/share/pixmaps/jwmkit/folder_red.svg;
+sudo cp /usr/share/icons/Papirus-Dark/64x64/apps/accessories-calculator.svg /usr/share/pixmaps/jwmkit/calc.svg;
+sudo cp /usr/share/icons/Papirus-Dark/64x64/mimetypes/x-office-calendar.svg /usr/share/pixmaps/jwmkit/calgray.svg;
+sudo cp /usr/share/icons/Papirus-Dark/24x24/emblems/vcs-normal.svg /usr/share/pixmaps/jwmkit/ok_check.svg;
+sudo cp /usr/share/icons/Papirus-Dark/24x24/emblems/emblem-information.svg /usr/share/pixmaps/jwmkit/info_red.svg;
+sudo cp /usr/share/icons/Papirus-Dark/24x24/emblems/emblem-information.svg /usr/share/pixmaps/jwmkit/info_yellow.svg;
+sudo cp /usr/share/icons/Papirus-Dark/24x24/emblems/emblem-warning.svg /usr/share/pixmaps/jwmkit/warn.svg;
+sudo cp /usr/share/icons/Papirus-Dark/24x24/emblems/emblem-question.svg /usr/share/pixmaps/jwmkit/question_gray.svg;
+sudo cp /usr/share/icons/Papirus-Dark/24x24/emblems/emblem-question.svg /usr/share/pixmaps/jwmkit/question_yellow.svg;
+sudo cp /usr/share/icons/Papirus-Dark/64x64/apps/utilities-terminal.svg /usr/share/pixmaps/jwmkit/term.svg;
+sudo cp /usr/share/icons/Papirus-Dark/64x64/apps/internet-web-browser.svg /usr/share/pixmaps/jwmkit/web.svg;
+sudo cp /usr/share/icons/Papirus-Dark/64x64/apps/cs-desktop.svg /usr/share/pixmaps/jwmkit/showdesktop.svg;
+sudo cp /usr/share/icons/Papirus-Dark/symbolic/actions/send-to-symbolic.svg /usr/share/pixmaps/jwmkit/sendtogray.svg;
+sudo cp /usr/share/icons/Papirus-Dark/64x64/apps/application-default-icon.svg /usr/share/pixmaps/jwmkit/program.svg;
+sudo cp /usr/share/icons/Papirus-Dark/64x64/apps/standard-notes.svg /usr/share/pixmaps/jwmkit/jot.svg;
+sudo cp /usr/share/icons/Papirus-Dark/symbolic/actions/system-shutdown-symbolic.svg /usr/share/pixmaps/jwmkit/shutdowngray.svg;
+sudo cp /usr/share/icons/Papirus-Dark/symbolic/actions/system-suspend-symbolic.svg /usr/share/pixmaps/jwmkit/suspendgray.svg;
+sudo cp /usr/share/icons/Papirus-Dark/symbolic/actions/system-restart-symbolic.svg /usr/share/pixmaps/jwmkit/restartgray.svg;
+sudo cp /usr/share/icons/Papirus-Dark/symbolic/actions/system-hibernate-symbolic.svg /usr/share/pixmaps/jwmkit/hibernategray.svg;
+sudo cp /usr/share/icons/Papirus-Dark/symbolic/actions/application-exit-symbolic.svg /usr/share/pixmaps/jwmkit/exitgray.svg;
+sudo cp /usr/share/icons/Papirus-Dark/symbolic/actions/process-stop-symbolic.svg /usr/share/pixmaps/jwmkit/killgray.svg;
+sudo cp /usr/share/icons/Papirus-Dark/symbolic/actions/window-close-symbolic.svg /usr/share/pixmaps/jwmkit/cancelgray.svg
+```
 
 ### JWMKit Menu Setup
 
@@ -349,7 +399,7 @@ In the Properties tab, set:
 
 In the Items tab:
 
-1. Remove the pager and all the tray buttons except the very first one
+1. Remove the pager and all the tray buttons except the very first one 
 
 2. Edit the icon of the first tray button to `debian-logo`
 
@@ -427,13 +477,13 @@ In JWMKit Settings, select Mozc Setup, click Edit User Dictionary in the Diction
 
 ### Package Install & Removal
 
-`sudo apt install flatpak snapd notification-daemon galculator evince feh mpv scrot xclip font-manager pavucontrol gpick diffuse gprename simplescreenrecorder transmission-gtk audacious chromium`
+`sudo apt install flatpak snapd notification-daemon galculator evince feh mpv scrot xclip font-manager pavucontrol gpick diffuse gprename simplescreenrecorder transmission-gtk audacious chromium blueman libqt5xml5 libqt5concurrent5 wget gnome-mines sl fortune cowsay lolcat`
 
 `sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo`
 
-`sudo flatpak install pinta`
+`sudo flatpak install com.github.PintaProject.Pinta com.vba_m.visualboyadvance-m com.github.k4zmu2a.spacecadetpinball`
 
-`sudo apt purge myspell* aspell* anthy libxfce4* firefox-esr-l10n* libreoffice-l10n-* hspell* mlterm*`
+`sudo apt purge myspell* aspell* anthy* libxfce4* firefox-esr-l10n* libreoffice-l10n-* hspell* mlterm*`
 
 `sudo apt install hunspell hunspell-en-us`
 
@@ -444,6 +494,10 @@ In JWMKit Settings, select Mozc Setup, click Edit User Dictionary in the Diction
 Download volume icon from https://github.com/Maato/volumeicon
 
 Download Discord from https://discord.com/download
+
+Download MultiMC from https://multimc.org/#Download
+
+Download FreeFileSync from https://freefilesync.org/download.php
 
 ### Enabling Volume Icon
 
@@ -465,7 +519,7 @@ In JWMKit Startup, add `/usr/local/bin/volumeicon` as a startup
 
 ### Enabling Notifications
 
-In JWMKit Startups, add `/usr/lib/notification-daemon-1.0/notification-daemon` as a startup
+In JWMKit Startups, add `/usr/lib/notification-daemon/notification-daemon` as a startup
 
 ### Enabling Easy Snap / Flatpak Package Inclusion in the Menu
 
@@ -476,6 +530,14 @@ In JWMKit Startups, add `/usr/lib/notification-daemon-1.0/notification-daemon` a
 In JWMKit Startups, add `/opt/custom_scripts/flatpak_snap_copier.sh` as a startup and a restart
 
 Small changes may still be needed for the copied desktop files. For example's Pinta's `@@ %F @@` wouldn't work when launched from JWM's Menu
+
+### Enabling Bluetooth
+
+`mkdir ~/Downloads/bluetooth`
+
+In JWMKit Startups, add `/usr/bin/blueman-applet` as a startup
+
+In Bluetooth Manager, set ~/Downloads/bluetooth as the incoming directory
 
 ### Application-Specific Theme Setup
 

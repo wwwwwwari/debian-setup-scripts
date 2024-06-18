@@ -1,0 +1,57 @@
+<?xml version="1.0"?> 
+<!-- License: LGPL v2.1 -->
+<JWM>
+    <WindowStyle>
+        <Font>Sans-10:Bold</Font>
+        <Width>1</Width>
+        <Height>26</Height>
+        <Corner>5</Corner>
+        <Opacity>1.0</Opacity>
+        <Foreground>#686868</Foreground>
+        <Background>#2e2e2e</Background>
+        <Outline>#1b1b1b</Outline>
+        <Active>
+            <Foreground>#eeeeee</Foreground>
+            <Background>#282828</Background>
+            <Outline>#282828</Outline>
+        </Active>
+    </WindowStyle>
+	<TrayStyle group="false" list="desktop">
+		<Font>Roboto Condensed-11</Font>
+		<Background>#353535</Background>
+		<Foreground>#dfdfdf</Foreground>
+		<Outline>#1b1b1b</Outline>
+		<Active>
+			<Background>#15539e</Background>
+			<Foreground>#fefefe</Foreground>
+		</Active>
+	</TrayStyle>
+
+        <PagerStyle>
+                <Outline>#1b1b1b</Outline>
+                <Foreground>#373737</Foreground>
+                <Background>#282828</Background>
+                <Text>#eeeeee</Text>
+                <Active>
+                        <Foreground>#15539e</Foreground>
+                        <Background>#fefefe</Background>
+                </Active>
+        </PagerStyle>
+
+	<MenuStyle>
+		<Font>Roboto Condensed-11</Font>
+		<Foreground>#eeeeee</Foreground>
+		<Background>#2f2f2f</Background>
+		<Outline>#1b1b1b</Outline>
+		<Active>
+			<Background>#15539e</Background>
+			<Foreground>#fefefe</Foreground>
+		</Active>
+	</MenuStyle>
+	<PopupStyle>
+		<Font>Roboto Condensed-11</Font>
+		<Foreground>#f0f0f0</Foreground>
+		<Background>#000000</Background>
+		<Outline>#000000</Outline>
+	</PopupStyle>
+</JWM>
