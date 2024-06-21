@@ -414,7 +414,7 @@ In the Items tab:
 
 1. Remove the pager and all the tray buttons except the very first one 
 
-2. Edit the icon of the first tray button to `debian-logo`
+2. Edit the icon of the first tray button to `pan-up-symbolic`
 
 3. Edit the format of the clock to `%H:%M`
 
