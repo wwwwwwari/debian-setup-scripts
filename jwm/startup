@@ -6,4 +6,5 @@
      <RestartCommand>/opt/custom_scripts/flatpak_snap_copier.sh</RestartCommand>
      <StartupCommand>/usr/local/bin/volumeicon</StartupCommand>
      <StartupCommand>/usr/bin/blueman-applet</StartupCommand>
+     <StartupCommand>/usr/bin/light-locker --lock-after-screensaver=60 --late-locking --lock-on-suspend --lock-on-lid</StartupCommand>
 </JWM>

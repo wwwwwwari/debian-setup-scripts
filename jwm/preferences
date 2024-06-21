@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <JWM>
    <Desktops width="2" height="1">
-      <Background type="image">/home/wari/Pictures/wallpapers/__mika_blue_archive__12aacb098ea70b3a745bc5fd1a4ee0dd.jpg</Background>
+      <Background type="tile">/home/wari/Pictures/wallpapers/minimalist-mountains-19.jpg</Background>
    </Desktops>
    <DoubleClickSpeed>400</DoubleClickSpeed>
    <DoubleClickDelta>2</DoubleClickDelta>

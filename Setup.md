@@ -26,7 +26,7 @@ This part includes initial wired network configuration just so an additional pac
 
 Connect LAN cable to your computer
 
-`sudo nano /etc/apt/sources.list` to use mirror.applebred.net. Ensure nonfree is included
+`sudo nano /etc/apt/sources.list` to use mirror.applebred.net. Ensure contrib, non-free and non-free-firmware are included
 
 `sudo ip a` to get the wired and wireless interfaces - will assume eth0 and wlan0 below
 
@@ -199,6 +199,12 @@ Add the following line at the end of the file:
 `blacklist pcspkr`
 
 The changes should apply without a restart
+
+### Enabling Nvidia GPU
+
+`sudo apt install nvidia-detect`
+
+Install drivers according to `nvidia-detect` and https://wiki.debian.org/NvidiaGraphicsDrivers
 
 ### Common Issues
 
@@ -484,7 +490,7 @@ In JWMKit Settings, select Mozc Setup, click Edit User Dictionary in the Diction
 
 ### Package Install & Removal
 
-`sudo apt install flatpak snapd notification-daemon galculator evince feh mpv scrot xclip font-manager pavucontrol gpick diffuse gprename simplescreenrecorder transmission-gtk audacious chromium blueman libqt5xml5 libqt5concurrent5 wget gnome-mines sl fortune cowsay lolcat onboard`
+`sudo apt install flatpak snapd notification-daemon galculator evince feh mpv scrot xclip font-manager pavucontrol gpick diffuse gprename simplescreenrecorder transmission-gtk audacious chromium blueman libqt5xml5 libqt5concurrent5 wget gnome-mines sl fortune cowsay lolcat onboard light-locker`
 
 `sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo`
 
@@ -505,6 +511,8 @@ Download Discord from https://discord.com/download
 Download MultiMC from https://multimc.org/#Download
 
 Download FreeFileSync from https://freefilesync.org/download.php
+
+Download IBM Semeru JDK Open Edition from https://developer.ibm.com/languages/java/semeru-runtimes/downloads/
 
 ### Enabling Volume Icon
 
@@ -551,6 +559,17 @@ In Bluetooth Manager, set ~/Downloads/bluetooth as the incoming directory
 `sudo nano /etc/lightdm/lightdm-gtk-greeter.conf`
 
 Add `keyboard=onboard` under the already uncommented `[greeter]`
+
+### Enabling Idle Auto-Lock
+
+`sudo nano .xsessionrc` and add:
+
+```
+xset s on
+xset s 600 
+```
+
+In JWMKit Startups, add `/usr/bin/light-locker --lock-after-screensaver=60 --late-locking --lock-on-suspend --lock-on-lid`
 
 ### Application-Specific Theme Setup
 
