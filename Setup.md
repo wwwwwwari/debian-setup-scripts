@@ -490,7 +490,7 @@ In JWMKit Settings, select Mozc Setup, click Edit User Dictionary in the Diction
 
 ### Package Install & Removal
 
-`sudo apt install flatpak snapd notification-daemon galculator evince feh mpv scrot xclip font-manager pavucontrol gpick diffuse gprename simplescreenrecorder transmission-gtk audacious chromium blueman libqt5xml5 libqt5concurrent5 wget gnome-mines sl fortune cowsay lolcat onboard light-locker`
+`sudo apt install flatpak snapd notification-daemon galculator evince feh mpv scrot xclip font-manager pavucontrol gpick diffuse gprename simplescreenrecorder transmission-gtk audacious chromium blueman libqt5xml5 libqt5concurrent5 wget gnome-mines sl fortune cowsay lolcat onboard light-locker ghex`
 
 `sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo`
 
@@ -569,7 +569,11 @@ xset s on
 xset s 600 
 ```
 
-In JWMKit Startups, add `/usr/bin/light-locker --lock-after-screensaver=60 --late-locking --lock-on-suspend --lock-on-lid`
+In JWMKit Startups, add `/usr/bin/light-locker --lock-after-screensaver=60 --late-locking --lock-on-suspend --lock-on-lid` as a startup
+
+### Showing Desktop Icons
+
+In JWMKit Startups, add `/usr/bin/pcmanfm --daemon-mode --desktop` as a startup
 
 ### Application-Specific Theme Setup
 
