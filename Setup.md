@@ -506,6 +506,8 @@ In JWMKit Settings, select Mozc Setup, click Edit User Dictionary in the Diction
 
 `sudo apt dist-upgrade`
 
+`cp ~/git/debian-setup-scripts/applications ~/.local/share/applications`
+
 Download volume icon from https://github.com/Maato/volumeicon
 
 Download Discord from https://discord.com/download
