@@ -278,7 +278,7 @@ icon-theme-name=Papirus-Dark
 cursor-theme-name=Bibata-Modern-Classic
 ```
 
-Check if the theme is applied in programs like Geany or Mousepad
+Check if the theme is applied in programs like Geany or xarchiver
 
 ### GTK4 & Qt Theme Setup
 `nano ~/.xsessionrc` and add the following:
@@ -498,7 +498,7 @@ In JWMKit Settings, select Mozc Setup, click Edit User Dictionary in the Diction
 
 `sudo apt-mark manual dconf-cli fcitx* xxkb uim-mozc libibus-1.0-5 ibus-gtk* ibus ibus-data fonts-ipafont yt-dlp`
 
-`sudo apt purge myspell* aspell* anthy* libxfce4* firefox-esr-l10n* libreoffice-l10n-* hspell* mlterm* task-*-desktop`
+`sudo apt purge myspell* aspell* anthy* libxfce4* firefox-esr-l10n* libreoffice-l10n-* hspell* mlterm* task-*-desktop xterm mousepad`
 
 `sudo apt install hunspell hunspell-en-us`
 
@@ -515,6 +515,8 @@ Download Discord from https://discord.com/download
 Download MultiMC from https://multimc.org/#Download
 
 Download FreeFileSync from https://freefilesync.org/download.php
+
+Download Leafpad from https://archive.org/details/leafpad_0.8.18.1-5_amd64
 
 ### Setting Up OpenJDK 21
 
