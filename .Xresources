@@ -1,0 +1,9 @@
+XCalc*background:                      #353535
+XCalc.ti.bevel.screen.*.background:    #1B1B1B
+XCalc*foreground:                      #EEEEEE
+XCalc.geometry:                        400x550
+XCalc.stipple:                         false
+XCalc.ti.bevel.background:             #2D2D2D
+XCalc.ti.button4.background:           #15539E
+XCalc.ti.button5.background:           #15539E
+XCalc.ti.button55.background:          #15539E

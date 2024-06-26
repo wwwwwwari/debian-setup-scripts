@@ -1,10 +1,11 @@
 <JWM>
-     <StartupCommand>/usr/share/discord/Discord</StartupCommand>
+     <StartupCommand>/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=com.discordapp.Discord com.discordapp.Discord</StartupCommand>
      <StartupCommand>/usr/bin/fcitx5</StartupCommand>
      <StartupCommand>/usr/lib/notification-daemon/notification-daemon</StartupCommand>
      <StartupCommand>/opt/custom_scripts/flatpak_snap_copier.sh</StartupCommand>
      <RestartCommand>/opt/custom_scripts/flatpak_snap_copier.sh</RestartCommand>
      <StartupCommand>/usr/local/bin/volumeicon</StartupCommand>
      <StartupCommand>/usr/bin/blueman-applet</StartupCommand>
-     <StartupCommand>/usr/bin/light-locker --lock-after-screensaver=60 --late-locking --lock-on-suspend --lock-on-lid</StartupCommand>
+     <StartupCommand>/usr/bin/light-locker --lock-after-screensaver=60 --no-late-locking --lock-on-suspend --lock-on-lid</StartupCommand>
+     <StartupCommand>/usr/bin/pcmanfm --daemon-mode --desktop</StartupCommand>
 </JWM>

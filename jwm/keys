@@ -20,4 +20,5 @@
    <Key key="Escape" mask="CS">exec:lxtask</Key>
    <Key key="Tab" mask="AS">prev</Key>
    <Key key="e" mask="4">exec:pcmanfm</Key>
+   <Key key="period" mask="4">exec:/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=smile it.mijorus.smile</Key>
 </JWM>

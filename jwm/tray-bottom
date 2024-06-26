@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <JWM>
    <Tray autohide="on" height="46" x="0" y="-1">
-      <TrayButton icon="debian-logo">
+      <TrayButton icon="pan-up-symbolic">
          <Button mask="1">root:1</Button>
          <Button mask="3">root:j</Button>
       </TrayButton>

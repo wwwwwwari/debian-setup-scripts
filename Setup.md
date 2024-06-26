@@ -490,13 +490,15 @@ In JWMKit Settings, select Mozc Setup, click Edit User Dictionary in the Diction
 
 ### Package Install & Removal
 
-`sudo apt install flatpak snapd notification-daemon galculator evince feh mpv scrot xclip font-manager pavucontrol gpick diffuse gprename simplescreenrecorder transmission-gtk audacious chromium blueman libqt5xml5 libqt5concurrent5 wget gnome-mines sl fortune cowsay lolcat onboard light-locker ghex`
+`sudo apt install flatpak snapd notification-daemon evince feh mpv scrot xclip font-manager pavucontrol gpick diffuse gprename simplescreenrecorder transmission-gtk audacious chromium blueman libqt5xml5 libqt5concurrent5 wget gnome-mines sl fortune cowsay lolcat onboard light-locker ghex inkscape`
 
 `sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo`
 
-`sudo flatpak install com.github.PintaProject.Pinta com.vba_m.visualboyadvance-m com.github.k4zmu2a.spacecadetpinball`
+`sudo flatpak install com.github.PintaProject.Pinta com.vba_m.visualboyadvance-m com.github.k4zmu2a.spacecadetpinball it.mijorus.smile com.discordapp.Discord`
 
-`sudo apt purge myspell* aspell* anthy* libxfce4* firefox-esr-l10n* libreoffice-l10n-* hspell* mlterm*`
+`sudo apt-mark manual dconf-cli fcitx* xxkb uim-mozc libibus-1.0-5 ibus-gtk* ibus ibus-data fonts-ipafont yt-dlp`
+
+`sudo apt purge myspell* aspell* anthy* libxfce4* firefox-esr-l10n* libreoffice-l10n-* hspell* mlterm* task-*-desktop`
 
 `sudo apt install hunspell hunspell-en-us`
 
@@ -512,7 +514,22 @@ Download MultiMC from https://multimc.org/#Download
 
 Download FreeFileSync from https://freefilesync.org/download.php
 
+### Setting Up OpenJDK 21
+
 Download IBM Semeru JDK Open Edition from https://developer.ibm.com/languages/java/semeru-runtimes/downloads/
+
+`nano ~/.xsessionrc` and add the following to the end of the file:
+
+```
+export PATH=$PATH:/opt/jdk-21.0.3+9/bin:/opt/bin
+export JAVA_HOME=/opt/jdk-21.0.3+9
+```
+
+### Making Quick Windows-Like GMRUN Shortcuts
+
+`sudo mkdir /opt/bin`
+
+`sudo cp ~/git/debian-setup-scripts/opt/bin/* /opt/bin/` 
 
 ### Enabling Volume Icon
 
@@ -575,8 +592,37 @@ In JWMKit Startups, add `/usr/bin/light-locker --lock-after-screensaver=60 --lat
 
 In JWMKit Startups, add `/usr/bin/pcmanfm --daemon-mode --desktop` as a startup
 
+In PCManFM, go to Edit > Preferences and tick "Don't ask options on launch executable file"
+
+Change `pcmanfm-qt` to `pcmanfm` in `user-home.desktop` and `computer.desktop` in `~/Desktop`
+
+Remove other icons
+
+`cp /usr/share/applications/firefox-esr.desktop ~/Desktop`
+
+`cp /usr/share/applications/multimc.desktop ~/Desktop/`
+
+`cp ~/.local/share/applications/com.github.PintaProject.Pinta.desktop ~/Desktop`
+
+### Enabling Emoji Picker
+
+In JWMKit Keys, set `Alt + .` to `/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=smile it.mijorus.smile`
+
+Note: the numpad's `.` will not work for some reasons. Use the one in the main keyboard.
+
+Open the application and set to run in the background.
+
 ### Application-Specific Theme Setup
 
-1. **Geany:** download the dark theme from `https://raw.github.com/geany/geany-themes/master/colorschemes/kary-pro-colors-dark.conf` and save it to ~/.config/geany/colorschemes
+#### Geany
 
-2. **LXTerminal:** change the pallette to Tango and change the background to #1A1A1A
+Download the dark theme from `https://raw.github.com/geany/geany-themes/master/colorschemes/kary-pro-colors-dark.conf` and save it to ~/.config/geany/colorschemes
+
+#### LXTerminal
+
+Change the pallette to Tango and change the background to #1A1A1A
+
+#### XCalc
+
+`sudo cp ~/git/debian-setup-scripts/.Xresources /opt/custom_scripts`
+`sudo nano ~/xsessionrc` and add `xrdb /opt/custom_scripts/.Xresources`
