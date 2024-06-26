@@ -1,0 +1,12 @@
+#flatpak_snap_copier no
+[Desktop Entry]
+Name=Leafpad
+GenericName=Text Editor
+Comment=Lightweight text editor
+Exec=/usr/bin/leafpad
+Terminal=false
+Type=Application
+Keywords=Notepad;Text Editor
+Icon=leafpad
+Categories=Utility;
+StartupNotify=false
