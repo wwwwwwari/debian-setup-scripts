@@ -1,0 +1,12 @@
+#flatpak_snap_copier no
+[Desktop Entry]
+Name=Calculator
+GenericName=Scientific calculator
+Comment=Run a scientfic calculator XCalc
+Exec=/usr/bin/xcalc
+Terminal=false
+Type=Application
+Keywords=Math;calculator;
+Icon=xcalc
+Categories=Utility;Education;
+StartupNotify=false

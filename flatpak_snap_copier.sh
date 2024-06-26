@@ -32,14 +32,20 @@ find "$source_snap_dir" -iname "*.desktop" | while read -r file; do
 		zenity --notification --text="Copied snap file: $file"
 	fi
 done
-# remove if outdated
+# remove if outdated -- you can exclude desktop files from this process by adding "#flatpak_snap_copier no" anywhere in the files
 find "$destination_dir" -iname "*.desktop" | while read -r file; do
-	base_name="$(basename ${file})" 
-	old_flatpak_file="$source_flatpak_dir/$base_name"
-	old_snap_file="$source_snap_dir/$base_name"
-	if [ ! -f "$old_flatpak_file" ] && [ ! -f "$old_snap_file" ]; then
-		rm -f $file
-		zenity --notification --text="Deleted outdated desktop file: $file"
+	exclude_token="$(grep -m 1 -c '#flatpak_snap_copier no' ${file})"
+	echo $exclude_token
+	if [ $exclude_token == "0" ]; then
+		
+		base_name="$(basename ${file})" 
+		old_flatpak_file="$source_flatpak_dir/$base_name"
+		old_snap_file="$source_snap_dir/$base_name"
+		
+		if [ ! -f "$old_flatpak_file" ] && [ ! -f "$old_snap_file" ]; then
+			rm -f $file
+			zenity --notification --text="Deleted outdated desktop file: $file"
+		fi
 	fi
 done
 jwm -reload
