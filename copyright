@@ -1,0 +1,10 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Source: https://github.com/wwwwwwari/debian-setup-scripts
+
+Files: *
+Copyright: Wari (https://github.com/wwwwwwari)
+License: Unlicense
+
+Files: themes/Adwaita-Actually-Dark/*
+Copyright: Various (https://gitlab.gnome.org/Archive/gnome-themes-extra/-/graphs/master?ref_type=heads)
+License: LGPL-2.1
