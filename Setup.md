@@ -214,7 +214,7 @@ Install drivers according to `nvidia-detect` and https://wiki.debian.org/NvidiaG
 
 ### Package Install & Removal
 
-`sudo apt install lightdm jwm pcmanfm lxterminal geany papirus-icon-theme bibata-cursor-theme libglib2.0-dev adwaita-qt adwaita-qt6 awf-gtk4 wireshark git blackbird-gtk-theme lxappearance` 
+`sudo apt install lightdm jwm pcmanfm lxterminal geany papirus-icon-theme bibata-cursor-theme libglib2.0-dev adwaita-qt adwaita-qt6 awf-gtk4 wireshark git lxappearance unattended-upgrades` 
 
 When prompted, select lightdm instead of sddm.
 
@@ -247,11 +247,13 @@ Comment=Default Cursor Theme
 Inherits=Bibata-Modern-Classic
 ```
 
+`sudo cp ~/git/debian-setup-scripts/themes/Adwaita-Actually-Dark /usr/share/themes/`
+
 ### GTK2 Theme Setup
 
 `lxappearance`
 
-Change the theme to Blackbird, icon to Papirus-Dark and cursor to Bibata.
+Change the theme to `Adwaita-Actually-Dark`, icon to Papirus-Dark and cursor to Bibata.
 
 Check if the theme is applied in programs like pcmanfm and lxtask
 
@@ -549,6 +551,10 @@ Extract the Volume Icon Zip
 
 In JWMKit Startup, add `/usr/local/bin/volumeicon` as a startup
 
+Log out and log in again to apply the changes.
+
+Right click on the icon in the tray, go to Preferences > Status Icon and change the external mixter command to `lxterminal -e 'alsamixer'`
+
 ### Blocking Annoying Spellchecker and i10n Packages
 
 `sudo mv ~/git/debian-setup-scripts/apt/preferences.d/11-block-dictionaries /etc/apt/preferences.d/` 
@@ -615,6 +621,14 @@ In JWMKit Keys, set `Alt + .` to `/usr/bin/flatpak run --branch=stable --arch=x8
 Note: the numpad's `.` will not work for some reasons. Use the one in the main keyboard.
 
 Open the application and set to run in the background.
+
+### Configure Automatic Upgrades
+
+Apt packages: follow https://wiki.debian.org/UnattendedUpgrades (no need to install `apt-listchanges`)
+
+Snap packages: should already be updated automatically by default
+
+Flatpak packages: add `flatpak update -y` to `~/.xsessionrc`
 
 ### Application-Specific Theme Setup
 
